@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Trax Omni",
+    "slug": "trax-omni",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#7C3AED"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.uitrax.traxomni",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Trax Omni to access your camera to take photos for contacts and leads.",
+        "NSPhotoLibraryUsageDescription": "Allow Trax Omni to access your photo library to upload images for contacts and leads."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#7C3AED"
+      },
+      "package": "com.uitrax.traxomni",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "apiUrl": "https://27c7f241-3e0c-4307-8a98-9b202fab114b-00-yrmtpwumnc5i.pike.replit.dev/api",
+      "releaseChannel": "production",
+      "eas": {
+        "projectId": "1172f5b6-83ee-452d-ba7e-b551a530706f"
+      }
+    },
+    "owner": "hacksmartflowai"
+  }
+}
